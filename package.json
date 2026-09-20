@@ -1,0 +1,27 @@
+{
+  "name": "fb-ads-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate-vapid": "node scripts/generate-vapid.js",
+    "cron:check": "node scripts/run-cron-check.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/web-push": "^3.6.3",
+    "typescript": "^5.5.4"
+  }
+}
