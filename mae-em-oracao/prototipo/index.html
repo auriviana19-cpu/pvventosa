@@ -1,0 +1,336 @@
+<title>Mãe em Oração</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: one centered reading column, like a phone app; day strip on top, sticky audio bar at the bottom */
+  :root {
+    --bg: #F2F4F7;
+    --surface: #FFFFFF;
+    --ink: #1F2233;
+    --muted: #5E6378;
+    --line: #DCE0EA;
+    --accent: #5B3A70;      /* ameixa: a cor da oração da madrugada */
+    --accent-soft: #ECE4F2;
+    --dawn: #C9893F;        /* luz do amanhecer, usada só no versículo */
+    --ok: #2F7A5B;
+    --highlight: #FFF3D9;
+    --font-display: "Young Serif", Georgia, "Times New Roman", serif;
+    --font-read: "Literata", Georgia, serif;
+    --font-ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12141D; --surface: #1B1E2A; --ink: #ECEAF2; --muted: #A3A7BA; --line: #2E3242;
+      --accent: #CBA8E0; --accent-soft: #2C2438; --dawn: #E5B26E; --ok: #6CC79E; --highlight: #3A3222;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12141D; --surface: #1B1E2A; --ink: #ECEAF2; --muted: #A3A7BA; --line: #2E3242;
+    --accent: #CBA8E0; --accent-soft: #2C2438; --dawn: #E5B26E; --ok: #6CC79E; --highlight: #3A3222;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--ink); }
+  body { font-family: var(--font-ui); font-size: 15px; line-height: 1.5; }
+
+  .app {
+    max-width: 640px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 20px 120px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+
+  header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .brand { display: flex; flex-direction: column; gap: 2px; }
+  .brand h1 { font-family: var(--font-display); font-weight: 400; font-size: 1.7rem; margin: 0; letter-spacing: -0.01em; }
+  .brand span { color: var(--muted); font-size: 0.85rem; }
+  .progress-label { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .progress-label strong { color: var(--accent); }
+
+  .days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .day {
+    appearance: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    border-radius: 12px; padding: 8px 2px 7px; cursor: pointer; font: inherit;
+    display: flex; flex-direction: column; align-items: center; gap: 1px; position: relative;
+  }
+  .day b { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+  .day small { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-inline: 2px; }
+  .day[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+  .day[aria-current="true"] small { color: var(--surface); opacity: 0.85; }
+  .day.done::after {
+    content: ""; position: absolute; top: 5px; right: 5px; width: 7px; height: 7px; border-radius: 50%; background: var(--ok);
+  }
+  .day:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--dawn); outline-offset: 2px; }
+
+  article.devo {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+    padding: 24px clamp(18px, 5vw, 32px) 28px; display: flex; flex-direction: column; gap: 22px;
+  }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 0.78rem; color: var(--muted); }
+  .chip { background: var(--accent-soft); color: var(--accent); padding: 3px 10px; border-radius: 999px; font-weight: 600; letter-spacing: 0.02em; }
+  .devo h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.45rem, 4.6vw, 1.9rem); line-height: 1.2; margin: 0; text-wrap: balance; }
+
+  .verse { margin: 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--dawn); }
+  .verse p { font-family: var(--font-read); font-style: italic; font-size: 1.12rem; line-height: 1.55; margin: 0 0 6px; }
+  .verse cite { font-style: normal; font-size: 0.82rem; font-weight: 600; color: var(--dawn); letter-spacing: 0.03em; }
+
+  .section-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 8px; }
+  .reading p { font-family: var(--font-read); font-size: 1.04rem; line-height: 1.72; margin: 0 0 14px; max-width: 65ch; }
+  .reading p:last-child { margin-bottom: 0; }
+  [data-seg] { border-radius: 6px; transition: background-color .25s ease; }
+  [data-seg].speaking { background: var(--highlight); box-shadow: 0 0 0 6px var(--highlight); }
+
+  .prayer { background: var(--accent-soft); border-radius: 14px; padding: 18px; }
+  .prayer p { font-family: var(--font-read); font-size: 1.02rem; line-height: 1.68; margin: 0; }
+  .practice { display: flex; gap: 12px; align-items: flex-start; }
+  .practice .icon { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--accent); color: var(--accent); display: grid; place-items: center; font-weight: 700; }
+  .practice p { margin: 0; min-width: 0; }
+
+  .done-btn {
+    appearance: none; border: 1.5px solid var(--accent); background: transparent; color: var(--accent);
+    border-radius: 999px; padding: 11px 18px; font: 600 0.95rem var(--font-ui); cursor: pointer; align-self: flex-start;
+  }
+  .done-btn.is-done { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+
+  .note { font-size: 0.8rem; color: var(--muted); line-height: 1.5; padding: 0 4px; }
+
+  /* Player */
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+  .player-wrap {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+    padding-left: max(12px, env(safe-area-inset-left, 0px));
+    padding-right: max(12px, env(safe-area-inset-right, 0px));
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    pointer-events: none;
+  }
+  .player {
+    pointer-events: auto; max-width: 640px; margin: 0 auto; background: var(--ink); color: var(--bg);
+    border-radius: 18px; padding: 10px 12px; display: flex; align-items: center; gap: 12px;
+    box-shadow: 0 10px 30px rgba(20, 16, 40, 0.25);
+  }
+  .play {
+    flex: none; width: 46px; height: 46px; border-radius: 50%; border: 0; cursor: pointer;
+    background: var(--accent); color: var(--bg); display: grid; place-items: center;
+  }
+  .play svg { width: 20px; height: 20px; fill: currentColor; }
+  .track { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+  .track-title { font-size: 0.85rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bars { display: flex; gap: 4px; }
+  .bars i { flex: 1; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--bg) 25%, transparent); position: relative; overflow: hidden; }
+  .bars i.on { background: var(--dawn); }
+  .bars i.now { background: color-mix(in srgb, var(--dawn) 55%, transparent); }
+  .speed {
+    flex: none; appearance: none; border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); background: transparent; color: var(--bg);
+    border-radius: 999px; padding: 6px 10px; font: 600 0.8rem var(--font-ui); cursor: pointer; font-variant-numeric: tabular-nums;
+  }
+  .player .status { font-size: 0.72rem; opacity: 0.75; }
+
+  @media (prefers-reduced-motion: reduce) { [data-seg] { transition: none; } }
+</style>
+
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <h1>Mãe em Oração</h1>
+      <span>Devocional diário · Semana 1</span>
+    </div>
+    <div class="progress-label" id="progress"></div>
+  </header>
+
+  <nav class="days" id="days" aria-label="Dias da semana"></nav>
+
+  <article class="devo" id="devo" aria-live="polite"></article>
+
+  <p class="note">Prévia do áudio usando a voz do seu próprio navegador. No app final, a leitura será feita por uma voz natural (IA ou locutora) gravada em MP3, que toca mesmo com a tela desligada.</p>
+</div>
+
+<div class="player-wrap">
+  <div class="player" role="region" aria-label="Leitura em áudio">
+    <button class="play" id="play" type="button" aria-label="Ouvir devocional">
+      <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icon-pause" viewBox="0 0 24 24" hidden><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    </button>
+    <div class="track">
+      <div class="track-title" id="track-title">Ouvir o devocional</div>
+      <div class="bars" id="bars"></div>
+      <div class="status" id="status">Toque no play para ouvir</div>
+    </div>
+    <button class="speed" id="speed" type="button" aria-label="Velocidade da leitura">1x</button>
+  </div>
+</div>
+
+<script>
+const DEVOCIONAIS = [{"dia": 1, "tema": "Cansaço", "titulo": "Quando o cansaço chega antes do café", "versiculo": "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.", "referencia": "Mateus 11:28", "reflexao": ["Tem dias em que você acorda já cansada. A noite foi curta, alguém chorou de madrugada, e a lista do dia começa antes de você abrir os olhos. Ninguém vê esse cansaço, mas ele pesa.", "Jesus não disse \"venham a mim os que estão dando conta de tudo\". Ele chamou justamente os cansados. O convite não é para você se esforçar mais, e sim para você parar um instante e entregar o peso a quem pode carregá-lo.", "Descanso, para uma mãe, nem sempre é dormir oito horas. Às vezes é um minuto de silêncio no banheiro, uma oração curta enquanto a água esquenta, um suspiro dizendo \"Senhor, eu preciso de ti\". Deus recebe esse minuto como um encontro inteiro."], "oracao": "Senhor, hoje eu chego cansada. Não tenho muito para oferecer além do meu coração. Troca o meu cansaço pelo teu descanso, renova as minhas forças e me ajuda a cuidar da minha casa com paz. Em nome de Jesus, amém.", "pratica": "Escolha um momento repetitivo do seu dia, como lavar a louça ou preparar a mamadeira, e transforme em um minuto de oração."}, {"dia": 2, "tema": "Ansiedade", "titulo": "Entregando os filhos nas mãos do Pai", "versiculo": "Lançando sobre ele toda a vossa ansiedade, porque ele tem cuidado de vós.", "referencia": "1 Pedro 5:7", "reflexao": ["Ser mãe é sentir o coração andando fora do corpo. A febre que não baixa, a criança que demora a falar, o adolescente que se fecha no quarto. A preocupação chega sem pedir licença.", "Pedro não pede que a gente finja que não está preocupada. Ele diz para lançar. Lançar é um gesto ativo: você pega aquilo que está pesando e joga nos braços de Deus, porque ele cuida de você e cuida de quem você ama.", "Seus filhos foram de Deus antes de serem seus. Ele os conhece pelo nome, sabe o que eles precisam e está presente onde você não consegue estar: na escola, no quarto, no futuro."], "oracao": "Pai, eu te entrego os meus filhos. Tu os amas mais do que eu consigo amar. Guarda a saúde, as amizades e o coração deles. Tira de mim o medo e me dá a confiança de quem sabe que tu estás no controle. Amém.", "pratica": "Escreva o nome de cada filho num papel e, ao lado, uma preocupação. Ore por cada uma e risque, como sinal de entrega."}, {"dia": 3, "tema": "Culpa", "titulo": "A graça que basta para a mãe imperfeita", "versiculo": "A minha graça te basta, porque o meu poder se aperfeiçoa na fraqueza.", "referencia": "2 Coríntios 12:9", "reflexao": ["Você gritou quando não queria. Deixou a criança mais tempo na tela do que gostaria. Esqueceu a reunião da escola. À noite, a culpa senta na beira da cama e repete tudo o que deu errado.", "Deus nunca esperou de você uma maternidade perfeita. Ele sabia das suas limitações quando confiou esses filhos a você. A fraqueza não desqualifica a mãe. É justamente nela que o poder de Deus aparece.", "Peça perdão quando errar, inclusive aos seus filhos. Isso ensina a eles mais sobre o evangelho do que muitas palavras. Depois, receba o perdão e siga em frente. A graça de Deus se renova, e a sua chance de recomeçar também."], "oracao": "Senhor, eu te entrego as minhas falhas de hoje. Perdoa onde eu errei e me ensina a ser mais paciente. Tira de mim a culpa que paralisa e me enche da tua graça, que basta. Amém.", "pratica": "Se você errou com um filho hoje, peça desculpas a ele com palavras simples e dê um abraço."}, {"dia": 4, "tema": "Paciência", "titulo": "Paciência não é força de vontade", "versiculo": "Mas o fruto do Espírito é: amor, gozo, paz, longanimidade, benignidade, bondade, fé, mansidão, temperança.", "referencia": "Gálatas 5:22-23", "reflexao": ["A décima vez que você pede para guardar o brinquedo. A briga dos irmãos no banco de trás. O choro sem motivo na fila do mercado. A paciência acaba rápido, e às vezes a gente acha que é porque não se esforçou o bastante.", "Paulo chama a paciência de fruto do Espírito. Fruto não nasce de esforço, nasce de ligação com a árvore. Quanto mais perto de Deus você está, mais esse fruto amadurece em você, mesmo nos dias difíceis.", "Antes de responder no impulso, respire e faça uma oração de uma frase: \"Espírito Santo, me dá paciência agora\". Não é mágica, é dependência. E é assim que o caráter de Cristo vai sendo formado em uma mãe comum."], "oracao": "Espírito Santo, produz em mim o teu fruto. Quando a minha paciência acabar, que a tua continue. Me ajuda a corrigir com amor e a falar com mansidão dentro da minha casa. Amém.", "pratica": "Combine com você mesma uma frase curta de oração para os momentos de estresse e repita sempre que sentir a voz subir."}, {"dia": 5, "tema": "Oração pelos filhos", "titulo": "O caminho em que eles devem andar", "versiculo": "Instrui o menino no caminho em que deve andar, e, até quando envelhecer, não se desviará dele.", "referencia": "Provérbios 22:6", "reflexao": ["Instruir não é só dar sermão. É o jeito como você reage quando dá errado, a oração antes do almoço, a música que toca no carro, o versículo colado na geladeira. Seus filhos aprendem muito mais com o que veem do que com o que ouvem.", "Você não consegue controlar o caminho que eles vão escolher no futuro, mas pode plantar sementes hoje. E pode orar. A oração de uma mãe é uma das forças mais constantes que existem.", "Ore por coisas específicas: amigos que levem para perto de Deus, proteção nas escolhas, um coração sensível, um futuro cônjuge que ame ao Senhor. Deus ouve cada nome e cada detalhe."], "oracao": "Pai, ensina-me a ensinar os meus filhos. Que a minha vida aponte para ti. Guarda os passos deles, coloca pessoas boas no caminho deles e faz com que eles te conheçam desde cedo. Amém.", "pratica": "Escolha um versículo curto e ensine aos seus filhos hoje. Repitam juntos antes de dormir."}, {"dia": 6, "tema": "Comparação", "titulo": "A mãe que Deus formou em você", "versiculo": "Eu te louvarei, porque de um modo terrível e tão maravilhoso fui formado; maravilhosas são as tuas obras, e a minha alma o sabe muito bem.", "referencia": "Salmo 139:14", "reflexao": ["No celular, a outra mãe tem a casa arrumada, o filho comendo brócolis e um sorriso de quem dormiu bem. Você olha para a sua cozinha e se sente atrás. A comparação rouba a alegria em segundos.", "O salmista lembra que você foi formada por Deus de um jeito único. Ele não fez uma mãe genérica para os seus filhos. Ele escolheu você, com a sua personalidade, a sua história e até o seu jeito diferente de fazer as coisas.", "Seus filhos não precisam da mãe da internet. Precisam da mãe que ora por eles, que os abraça e que pede perdão quando erra. Isso você já pode ser hoje."], "oracao": "Senhor, obrigada por me formar com cuidado. Livra o meu coração da comparação e me ajuda a ver a minha família com os teus olhos. Que eu seja a mãe que tu planejaste, e não a que os outros esperam. Amém.", "pratica": "Fique um dia sem abrir perfis que fazem você se sentir menos. No lugar, agradeça a Deus por três coisas reais da sua casa."}, {"dia": 7, "tema": "Recomeço", "titulo": "Misericórdias novas a cada manhã", "versiculo": "As misericórdias do Senhor são a causa de não sermos consumidos, porque as suas misericórdias não têm fim; novas são cada manhã; grande é a tua fidelidade.", "referencia": "Lamentações 3:22-23", "reflexao": ["Esse versículo foi escrito em meio a ruínas. Jeremias tinha visto tudo desmoronar e, mesmo assim, encontrou um motivo para ter esperança: a misericórdia de Deus não acaba.", "Para uma mãe, isso é um presente. A semana pode ter sido pesada, a paciência pode ter falhado, a casa pode estar de pernas para o ar. Mas amanhã de manhã existe uma porção nova de misericórdia esperando por você.", "Você chegou ao sétimo dia. Talvez não tenha conseguido fazer tudo, e está tudo bem. O que importa é que você está voltando para perto de Deus, um dia de cada vez. Ele é fiel e vai continuar com você na próxima semana."], "oracao": "Senhor, obrigada pela tua fidelidade nesta semana. Obrigada por me receber todos os dias, mesmo cansada e imperfeita. Renova a minha esperança e me ajuda a continuar caminhando contigo. Amém.", "pratica": "Releia as práticas desta semana e escolha uma para virar hábito na sua rotina."}];
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+
+let current = Math.min(store.get("mae-dia", 0), DEVOCIONAIS.length - 1);
+let done = new Set(store.get("mae-lidos", []));
+const speeds = [1, 1.2, 0.85];
+let speedIdx = 0;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// "1 Pedro 5:7" -> "Primeira Pedro, capítulo 5, versículo 7"
+function referenciaFalada(ref) {
+  const ordinais = { "1": "Primeira", "2": "Segunda", "3": "Terceira" };
+  let r = ref.replace(/^([123]) /, (_, n) => ordinais[n] + " ");
+  r = r.replace(/^Salmo (\d+):(\d+)/, "Salmo $1, versículo $2");
+  r = r.replace(/ (\d+):(\d+)-(\d+)$/, ", capítulo $1, versículos $2 a $3");
+  r = r.replace(/ (\d+):(\d+)$/, ", capítulo $1, versículo $2");
+  return r;
+}
+
+function renderDays() {
+  $("days").innerHTML = DEVOCIONAIS.map((d, i) => `
+    <button type="button" class="day${done.has(d.dia) ? " done" : ""}" data-i="${i}" aria-current="${i === current}"
+      aria-label="Dia ${d.dia}: ${esc(d.tema)}${done.has(d.dia) ? ", lido" : ""}">
+      <b>${d.dia}</b><small>${esc(d.tema)}</small>
+    </button>`).join("");
+  $("progress").innerHTML = `<strong>${done.size}</strong> de ${DEVOCIONAIS.length} dias lidos`;
+}
+
+function minutos(d) {
+  const palavras = [d.titulo, d.versiculo, ...d.reflexao, d.oracao, d.pratica].join(" ").split(/\s+/).length;
+  return Math.max(1, Math.round(palavras / 150));
+}
+
+function renderDevo() {
+  const d = DEVOCIONAIS[current];
+  $("devo").innerHTML = `
+    <div class="meta"><span class="chip">Dia ${d.dia} de ${DEVOCIONAIS.length}</span><span>${esc(d.tema)}</span><span>·</span><span>${minutos(d)} min de áudio</span></div>
+    <h2 data-seg="0">${esc(d.titulo)}</h2>
+    <blockquote class="verse" data-seg="1"><p>“${esc(d.versiculo)}”</p><cite>${esc(d.referencia)}</cite></blockquote>
+    <section class="reading">
+      <p class="section-label">Reflexão</p>
+      ${d.reflexao.map((p, i) => `<p data-seg="${i + 2}">${esc(p)}</p>`).join("")}
+    </section>
+    <section class="prayer" data-seg="${d.reflexao.length + 2}">
+      <p class="section-label">Oração</p>
+      <p>${esc(d.oracao)}</p>
+    </section>
+    <section class="practice" data-seg="${d.reflexao.length + 3}">
+      <span class="icon" aria-hidden="true">✓</span>
+      <div><p class="section-label">Prática do dia</p><p>${esc(d.pratica)}</p></div>
+    </section>
+    <button type="button" class="done-btn${done.has(d.dia) ? " is-done" : ""}" id="done">${done.has(d.dia) ? "Lido ✓" : "Marcar como lido"}</button>`;
+  $("track-title").textContent = `Dia ${d.dia} · ${d.titulo}`;
+  $("bars").innerHTML = segmentos(d).map(() => "<i></i>").join("");
+  $("done").addEventListener("click", () => {
+    done.has(d.dia) ? done.delete(d.dia) : done.add(d.dia);
+    store.set("mae-lidos", [...done]);
+    renderDays(); renderDevo();
+  });
+}
+
+/* ---------- Áudio (Web Speech API, só para a prévia) ---------- */
+const synth = window.speechSynthesis;
+let voz = null;
+let fila = [];      // [{seg, text}]
+let pos = 0;
+let tocando = false;
+let geracao = 0;    // ignora eventos de falas canceladas
+
+function escolherVoz() {
+  if (!synth) return;
+  const vozes = synth.getVoices().filter((v) => /^pt(-|_)BR/i.test(v.lang));
+  const preferidas = [/natural/i, /google/i, /francisca/i, /luciana/i, /maria/i];
+  voz = preferidas.map((re) => vozes.find((v) => re.test(v.name))).find(Boolean) || vozes[0] || null;
+}
+if (synth) { escolherVoz(); synth.addEventListener?.("voiceschanged", escolherVoz); }
+
+function segmentos(d) {
+  return [
+    d.titulo,
+    `${d.versiculo} ${referenciaFalada(d.referencia)}.`,
+    ...d.reflexao,
+    `Vamos orar. ${d.oracao}`,
+    `Prática do dia. ${d.pratica}`
+  ];
+}
+
+// Frases curtas evitam o corte de falas longas em alguns navegadores
+function montarFila(d) {
+  fila = [];
+  segmentos(d).forEach((texto, seg) => {
+    (texto.match(/[^.!?]+[.!?]+["”]?|[^.!?]+$/g) || [texto]).forEach((frase) => fila.push({ seg, text: frase.trim() }));
+  });
+  pos = 0;
+}
+
+function marcar(seg) {
+  document.querySelectorAll("[data-seg]").forEach((el) => el.classList.toggle("speaking", Number(el.dataset.seg) === seg));
+  [...$("bars").children].forEach((b, i) => { b.className = i < seg ? "on" : i === seg ? "now" : ""; });
+  const alvo = document.querySelector(`[data-seg="${seg}"]`);
+  if (alvo) alvo.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+}
+
+function falarProxima() {
+  if (!tocando) return;
+  if (pos >= fila.length) { parar(true); return; }
+  const item = fila[pos];
+  marcar(item.seg);
+  const minha = ++geracao;
+  const u = new SpeechSynthesisUtterance(item.text);
+  u.lang = "pt-BR"; if (voz) u.voice = voz;
+  u.rate = speeds[speedIdx] * 0.95; u.pitch = 1;
+  const seguir = () => { if (tocando && minha === geracao) { pos++; falarProxima(); } };
+  u.onend = seguir;
+  u.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") seguir(); };
+  synth.speak(u);
+}
+
+function setIcone() {
+  $("icon-play").hidden = tocando; $("icon-pause").hidden = !tocando;
+  $("play").setAttribute("aria-label", tocando ? "Pausar" : "Ouvir devocional");
+}
+
+function tocar() {
+  if (!synth) { $("status").textContent = "Este navegador não tem leitura em voz alta. Tente no Chrome ou no Safari."; return; }
+  if (!fila.length || pos >= fila.length) montarFila(DEVOCIONAIS[current]);
+  tocando = true; setIcone();
+  $("status").textContent = voz ? `Lendo com a voz ${voz.name}` : "Lendo com a voz padrão do aparelho";
+  synth.cancel();
+  falarProxima();
+}
+
+function parar(fim = false) {
+  tocando = false; geracao++; setIcone();
+  if (synth) synth.cancel();
+  if (fim) {
+    pos = 0; fila = [];
+    document.querySelectorAll(".speaking").forEach((el) => el.classList.remove("speaking"));
+    [...$("bars").children].forEach((b) => b.className = "on");
+    $("status").textContent = "Devocional concluído. Que Deus abençoe o seu dia.";
+  } else {
+    $("status").textContent = "Pausado. Toque no play para continuar.";
+  }
+}
+
+$("play").addEventListener("click", () => (tocando ? parar() : tocar()));
+$("speed").addEventListener("click", () => {
+  speedIdx = (speedIdx + 1) % speeds.length;
+  $("speed").textContent = String(speeds[speedIdx]).replace(".", ",") + "x";
+  if (tocando) { geracao++; synth.cancel(); falarProxima(); }
+});
+
+$("days").addEventListener("click", (e) => {
+  const b = e.target.closest(".day"); if (!b) return;
+  parar(); fila = []; pos = 0;
+  current = Number(b.dataset.i); store.set("mae-dia", current);
+  $("status").textContent = "Toque no play para ouvir";
+  renderDays(); renderDevo();
+  window.scrollTo({ top: 0 });
+});
+
+renderDays(); renderDevo();
+</script>
