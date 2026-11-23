@@ -1,0 +1,6 @@
+{
+  "name": "100 Protocoles de Ventouses Thérapeutiques",
+  "description": "Página de vendas de alta conversão para o método de ventosas terapêuticas de Claire Fontaine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
