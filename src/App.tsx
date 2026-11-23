@@ -47,11 +47,11 @@ const FRENCH_CITIES = [
 ];
 
 const SALE_ACTIONS = [
-  "vient d'acquérir les 100 Protocoles de Ventousothérapie",
-  "a obtenu les 100 Protocoles de Ventousothérapie + les 3 Bonus Offerts",
-  "a validé son accès à vie aux 100 Protocoles de Ventousothérapie",
-  "a commandé les 100 Protocoles de Ventousothérapie et la Fiche d'Anamnése",
-  "vient de sécuriser son pack pour les 100 Protocoles"
+  "acabou de adquirir os 100 Protocolos de Ventosaterapia",
+  "garantiu os 100 Protocolos de Ventosaterapia + os 3 Bônus de Presente",
+  "liberou o acesso vitalício aos 100 Protocolos de Ventosaterapia",
+  "comprou os 100 Protocolos de Ventosaterapia e a Ficha de Anamnese",
+  "acabou de garantir o pacote dos 100 Protocolos"
 ];
 
 export default function App() {
@@ -88,14 +88,14 @@ export default function App() {
       avatarColor: "bg-[#1877F2]/10 text-[#1877F2]",
       avatarUrl: "https://iili.io/CHLHSOQ.jpg",
       time: "2 h",
-      comment: "J'hésitais si le compendium apporterait vraiment des protocoles pratiques pour la lombalgie chronique. J'ai appliqué aujourd'hui la décompression myofasciale globale et le résultat avec mon premier patient a été incroyablement rapide ! Soulagement immédiat de la tension dorsale. Matériel de qualité 10/10, très bien mis en page, il fait gagner un temps précieux de raisonnement clinique au moment de monter la séance. Il vaut chaque centime !",
+      comment: "Eu estava na dúvida se o compêndio traria mesmo protocolos práticos para lombalgia crônica. Apliquei hoje a descompressão miofascial global e o resultado com meu primeiro paciente foi incrivelmente rápido! Alívio imediato da tensão nas costas. Material nota 10, muito bem diagramado, economiza um tempo precioso de raciocínio clínico na hora de montar a sessão. Vale cada centavo!",
       likes: 34,
       reply: {
         id: "claire_marcos",
         name: "Claire Fontaine",
         avatarUrl: "https://iili.io/CHsK4ZQ.jpg",
-        tag: "Autrice Spécialiste",
-        comment: "Bonjour Jean-Pierre ! Je suis immensément heureuse de votre retour. La technique de décompression myofasciale globale du dos agit directement sur les connexions fasciales profondes, rétablissant la mobilité instantanément. C'est la différence d'utiliser une cartographie exacte avec les durées et pressions correctes plutôt que d'improviser dans l'urgence. Bon succès dans vos soins cliniques !",
+        tag: "Autora Especialista",
+        comment: "Olá, Jean-Pierre! Fico imensamente feliz com o seu retorno. A técnica de descompressão miofascial global das costas atua diretamente nas conexões fasciais profundas, devolvendo a mobilidade na hora. Essa é a diferença de usar um mapeamento exato, com tempos e pressões corretos, em vez de improvisar na correria. Muito sucesso nos seus atendimentos!",
         time: "1 h",
         likes: 12
       }
@@ -107,14 +107,14 @@ export default function App() {
       avatarColor: "bg-[#e1306c]/10 text-[#e1306c]",
       avatarUrl: "https://iili.io/CHL3OQV.jpg",
       time: "4 h",
-      comment: "Le meilleur investissement que j'ai fait ce mois-ci, c'est certain ! Les bonus inclus sont sensationnels. J'ai déjà imprimé la fiche d'anamnèse et je l'ai utilisée à la clinique ce matin avec deux nouveaux clients de drainage et ventousothérapie esthétique. Cela donne une posture très professionnelle, digne d'une grande clinique, tout en collectant tout ce que nous devons savoir. Félicitations Claire Fontaine, un matériel parfait en livraison immédiate !",
+      comment: "Com certeza o melhor investimento que fiz neste mês! Os bônus incluídos são sensacionais. Já imprimi a ficha de anamnese e usei na clínica hoje de manhã com duas clientes novas de drenagem e ventosaterapia estética. Passa uma postura muito profissional, digna de uma grande clínica, e ainda coleta tudo o que precisamos saber. Parabéns, Claire Fontaine, material perfeito e com entrega imediata!",
       likes: 47,
       reply: {
         id: "claire_gabriela",
         name: "Claire Fontaine",
         avatarUrl: "https://iili.io/CHsK4ZQ.jpg",
-        tag: "Autrice Spécialiste",
-        comment: "C'est merveilleux d'entendre cela, Nathalie ! La Fiche d'Anamnése a été conçue précisément pour structurer vos premières minutes d'évaluation de manière rapide et sécurisée, protégeant le thérapeute de l'application sur des zones de contre-indication. Appliquez-la avec passion et les retours de clients seront automatiques !",
+        tag: "Autora Especialista",
+        comment: "Que maravilha ouvir isso, Nathalie! A Ficha de Anamnese foi criada justamente para estruturar os seus primeiros minutos de avaliação de forma rápida e segura, protegendo o terapeuta de aplicar em zonas de contraindicação. Use com dedicação e o retorno das clientes vem naturalmente!",
         time: "3 h",
         likes: 18
       }
@@ -126,14 +126,14 @@ export default function App() {
       avatarColor: "bg-[#0f766e]/10 text-[#0f766e]",
       avatarUrl: "https://iili.io/CHLKeg1.jpg",
       time: "6 h",
-      comment: "Je pratique en tant que kinésithérapeute ostéopathe et j'ai toujours cherché à intégrer le cupping à un niveau clinique profond. J'ai analysé le protocole pour les lombalgies aiguës et la disposition anatomique des ventouses est parfaite. Cela simplifie énormément le quotidien en clinique où le temps est crucial. C'est le type de contenu direct qui apporte de la sécurité au professionnel et des résultats irréprochables pour le patient. Une sélection chirurgicale de haut niveau.",
+      comment: "Atuo como fisioterapeuta e osteopata e sempre busquei integrar a ventosaterapia em um nível clínico profundo. Analisei o protocolo para lombalgias agudas e a disposição anatômica das ventosas é perfeita. Isso simplifica demais a rotina na clínica, onde o tempo é crucial. É o tipo de conteúdo direto que dá segurança ao profissional e resultados impecáveis para o paciente. Uma seleção cirúrgica, de altíssimo nível.",
       likes: 21,
       reply: {
         id: "claire_marcelo",
         name: "Claire Fontaine",
         avatarUrl: "https://iili.io/CHsK4ZQ.jpg",
-        tag: "Autrice Spécialiste",
-        comment: "Merci, Dr. Adrien ! Venant d'un professionnel de santé qualifié comme vous, votre évaluation a un poids énorme. Le compendium a été conçu justement avec cette rigueur anatomique et physiologique pour que les professionnels se sentent pleinement soutenus. Je suis honorée de figurer sur votre bureau de consultation !",
+        tag: "Autora Especialista",
+        comment: "Obrigada, Dr. Adrien! Vinda de um profissional de saúde qualificado como o senhor, sua avaliação tem um peso enorme. O compêndio foi criado justamente com esse rigor anatômico e fisiológico para que os profissionais se sintam totalmente amparados. É uma honra estar na sua mesa de atendimento!",
         time: "5 h",
         likes: 9
       }
@@ -147,9 +147,9 @@ export default function App() {
     const newCommentId = `user_${Date.now()}`;
     const newComment = {
       id: newCommentId,
-      name: "Vous (Visiteur)",
+      name: "Você (Visitante)",
       avatarUrl: "https://iili.io/CHsK4ZQ.jpg",
-      time: "À l'instant",
+      time: "Agora mesmo",
       comment: newCommentText.trim(),
       likes: 0,
       reply: null
@@ -169,9 +169,9 @@ export default function App() {
                 id: `claire_reply_${Date.now()}`,
                 name: "Claire Fontaine",
                 avatarUrl: "https://iili.io/CHsK4ZQ.jpg",
-                tag: "Autrice Spécialiste",
-                comment: "Bonjour ! Soyez le ou la bienvenue dans notre communauté de thérapeutes. Le Compendium a été conçu exactement dans ce but : vous faire gagner du temps clinique et apporter des résultats exceptionnels à vos patients dès la première séance. Je vous souhaite beaucoup de succès !",
-                time: "À l'instant",
+                tag: "Autora Especialista",
+                comment: "Olá! Seja muito bem-vindo(a) à nossa comunidade de terapeutas. O Compêndio foi criado exatamente para isso: economizar o seu tempo clínico e trazer resultados excepcionais aos seus pacientes já na primeira sessão. Desejo muito sucesso para você!",
+                time: "Agora mesmo",
                 likes: 1
               }
             };
@@ -189,9 +189,9 @@ export default function App() {
   const handleShare = () => {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(window.location.href);
-      alert("Lien copié pour partager !");
+      alert("Link copiado para compartilhar!");
     } else {
-      alert("Accédez au Compendium de ventousothérapie pour partager !");
+      alert("Acesse o Compêndio de Ventosaterapia para compartilhar!");
     }
   };
 
@@ -219,7 +219,7 @@ export default function App() {
           name: shuffledNames[i],
           city: shuffledCities[i],
           action: SALE_ACTIONS[actionIdx],
-          timeAgo: `il y a ${randMinutes} min`
+          timeAgo: `há ${randMinutes} min`
         });
       }
     }
@@ -303,55 +303,55 @@ export default function App() {
   // Protocols Categories Data with individual examples
   const categories = [
     {
-      title: "Catégorie A — Douleurs Musculaires & Articulaires",
-      description: "Protocoles pour lombalgie, cervicalgie, sciatique, tendinopathies, névralgies et décompression myofasciale globale.",
+      title: "Categoria A — Dores Musculares e Articulares",
+      description: "Protocolos para lombalgia, cervicalgia, ciatalgia, tendinopatias, neuralgias e descompressão miofascial global.",
       icon: <Activity className="w-6 h-6" />,
       protocols: [
-        "Lombalgies aiguës et chroniques (L4-S1)",
-        "Sciatiques et cruralgies rebelles",
-        "Cervicalgies de tension et torticolis",
-        "Tendinopathies d'Achille et rotuliennes",
-        "Névralgie d'Arnold et tensions sous-occipitales",
-        "Périarthrite scapulo-humérale (épaule gelée)",
-        "Décompression myofasciale globale du dos"
+        "Lombalgias agudas e crônicas (L4-S1)",
+        "Ciatalgias e cruralgias persistentes",
+        "Cervicalgias tensionais e torcicolo",
+        "Tendinopatias do tendão de Aquiles e patelar",
+        "Neuralgia de Arnold e tensões suboccipitais",
+        "Periartrite escapuloumeral (ombro congelado)",
+        "Descompressão miofascial global das costas"
       ]
     },
     {
-      title: "Catégorie B — Bien-Être Émotionnel & Nerveux",
-      description: "Accompagnez l'anxiété, le stress, l'insomnie et le burn-out par la régulation du système nervoso et la libération du diaphragme.",
+      title: "Categoria B — Bem-Estar Emocional e Nervoso",
+      description: "Atue na ansiedade, no estresse, na insônia e no burnout por meio da regulação do sistema nervoso e da liberação do diafragma.",
       icon: <Smile className="w-6 h-6" />,
       protocols: [
-        "Insomnies liées à l'anxiété et difficultés d'endormissement",
-        "Épuisement professionnel (Burnout) et fatigue surrénale",
-        "Protocole 'Ancrage et Respiration' (Libération du diaphragme)",
-        "Céphalées de tension et migraines ophtalmiques",
-        "Tensions émotionnelles somatisées au plexus solaire"
+        "Insônia ligada à ansiedade e dificuldade para pegar no sono",
+        "Esgotamento profissional (burnout) e fadiga adrenal",
+        "Protocolo 'Enraizamento e Respiração' (liberação do diafragma)",
+        "Cefaleias tensionais e enxaquecas oftálmicas",
+        "Tensões emocionais somatizadas no plexo solar"
       ]
     },
     {
-      title: "Catégorie C — Esthétique & Remodelage Corporel",
-      description: "Protocoles pour la circulation, la cellulite, la rétention d'eau, l'œdème, le drainage lymphatique et le remodelage corporel.",
+      title: "Categoria C — Estética e Modelagem Corporal",
+      description: "Protocolos para circulação, celulite, retenção de líquidos, edema, drenagem linfática e modelagem corporal.",
       icon: <Droplet className="w-6 h-6" />,
       protocols: [
-        "Sensation de jambes lourdes et stase veineuse",
-        "Drainage lymphatique profond des membres inférieurs",
-        "Protocole pour la cellulite adipeuse et aqueuse (cuisses/fessiers)",
-        "Relance micro-circulatoire après effort intense",
-        "Rétention d'eau et œdèmes aux chevilles"
+        "Sensação de pernas pesadas e estase venosa",
+        "Drenagem linfática profunda dos membros inferiores",
+        "Protocolo para celulite adiposa e aquosa (coxas/glúteos)",
+        "Reativação da microcirculação após esforço intenso",
+        "Retenção de líquidos e inchaço nos tornozelos"
       ]
     },
     {
-      title: "Catégorie D — Équilibre Organique & Immunité",
-      description: "Régulation du système digestif, respiratoire et activation immunitaire par la stimulation de zones réflexes.",
+      title: "Categoria D — Equilíbrio Orgânico e Imunidade",
+      description: "Regulação dos sistemas digestivo e respiratório e ativação da imunidade por meio da estimulação de zonas reflexas.",
       icon: <Stethoscope className="w-6 h-6" />,
       protocols: [
-        "Ballonnements abdominaux et côlon irritable (régulation du transit)",
-        "Spasmes gastriques et reflux gastro-œsophagien (RGO)",
-        "Bronchite asthmatique chronique et spasmes pulmonaires",
-        "Soutien métabolique et détoxification hépatique",
-        "Crampes et douleurs menstruelles (dysménorrhée)",
-        "Sinusite aiguë et dégagement des voies supérieures",
-        "Renforcement de l'immunité et régulation de l'énergie vitale"
+        "Distensão abdominal e intestino irritável (regulação do trânsito intestinal)",
+        "Espasmos gástricos e refluxo gastroesofágico (DRGE)",
+        "Bronquite asmática crônica e espasmos pulmonares",
+        "Suporte metabólico e desintoxicação hepática",
+        "Cólicas e dores menstruais (dismenorreia)",
+        "Sinusite aguda e desobstrução das vias aéreas superiores",
+        "Fortalecimento da imunidade e regulação da energia vital"
       ]
     }
   ];
@@ -359,32 +359,32 @@ export default function App() {
   // FAQs aligned with copy
   const faqs = [
     {
-      question: "Est-ce adapté aux débutants ?",
-      answer: "Oui ! Le livre numérique a été conçu de manière extrêmement didactique. Chaque protocole comporte des illustrations précises du positionnement des ventouses, ainsi que des instructions claires de pression et de temps d'application. Il convient aussi bien aux débutants qu'aux praticiens expérimentés."
+      question: "Serve para iniciantes?",
+      answer: "Sim! O e-book foi criado de forma extremamente didática. Cada protocolo traz ilustrações precisas do posicionamento das ventosas, além de instruções claras de pressão e tempo de aplicação. Serve tanto para iniciantes quanto para profissionais experientes."
     },
     {
-      question: "Dois-je avoir une formation préalable en ventousothérapie ?",
-      answer: "Ce n'est pas strictement obligatoire. Les protocoles servent de guide visuel étape par étape pour une consultation rapide. Néanmoins, le document vous dote des meilleures pratiques de biosécurité, des zones interdites et des contre-indications détaillées pour pratiquer en toute sécurité dès le premier jour."
+      question: "Preciso ter formação prévia em ventosaterapia?",
+      answer: "Não é obrigatório. Os protocolos funcionam como um guia visual passo a passo para consulta rápida. Mesmo assim, o material traz as melhores práticas de biossegurança, as zonas proibidas e as contraindicações detalhadas para você atender com total segurança desde o primeiro dia."
     },
     {
-      question: "S'agit-il d'un matériel physique ou numérique ?",
-      answer: "C'est un compendium 100% numérique au format PDF haute résolution. Dès la validation de l'achat, vous recevrez immédiatement vos accès par e-mail pour le télécharger. Vous pourrez le consulter directement sur votre téléphone, tablette, ordinateur ou même l'imprimer pour votre cabinet."
+      question: "O material é físico ou digital?",
+      answer: "É um compêndio 100% digital, em PDF de alta resolução. Assim que a compra for aprovada, você recebe na hora o acesso por e-mail para baixar. Dá para consultar direto no celular, tablet ou computador, ou até imprimir para o seu consultório."
     },
     {
-      question: "Combien de temps prend la livraison ?",
-      answer: "C'est instantané ! Le paiement est validé et traité en quelques secondes par notre plateforme intégrée hautement sécurisée. Une fois l'achat finalisé, le guide principal et l'ensemble de vos 3 bonus gratuits arrivent immédiatement dans votre boîte mail."
+      question: "Quanto tempo demora a entrega?",
+      answer: "É imediata! O pagamento é aprovado e processado em poucos segundos pela nossa plataforma integrada e altamente segura. Assim que a compra é concluída, o guia principal e os seus 3 bônus gratuitos chegam na hora no seu e-mail."
     },
     {
-      question: "Puis-je l'utiliser dans mon cabinet ?",
-      answer: "Tout à fait, c'est même le but principal ! Les bonus inclus vous aident précisément à accélérer votre quotidien professionnel, incluant des fiches de soins pratiques prêtes à l'impression."
+      question: "Posso usar no meu consultório?",
+      answer: "Com certeza, esse é justamente o objetivo principal! Os bônus incluídos ajudam a agilizar a sua rotina profissional, com fichas de atendimento práticas e prontas para imprimir."
     },
     {
-      question: "Y a-t-il des mises à jour ?",
-      answer: "Oui ! En effectuant un achat unique avec accès à vie, toutes les révisions périodiques du compendium de 100 protocoles et les nouveaux bonus vous seront envoyés gratuitement sur votre e-mail enregistré, sans aucun abonnement supplémentaire !"
+      question: "Tem atualizações?",
+      answer: "Sim! Com uma compra única e acesso vitalício, todas as revisões periódicas do compêndio de 100 protocolos e os novos bônus são enviados gratuitamente para o seu e-mail cadastrado, sem nenhuma assinatura adicional!"
     },
     {
-      question: "Et si cela ne me convient pas ?",
-      answer: "Nous avons une totale confiance en la valeur de ce matériel, c'est pourquoi nous proposons une garantie incondicional de 7 jours. Si, pour une raison quelconque, vous estimez que les protocoles n'ont pas amélioré vos soins, il vous suffit de nous envoyer un e-mail pour obtenir un remboursement intégral, sans aucun tracas ni questions."
+      question: "E se eu não gostar?",
+      answer: "Temos total confiança no valor deste material, por isso oferecemos uma garantia incondicional de 7 dias. Se, por qualquer motivo, você sentir que os protocolos não melhoraram os seus atendimentos, basta nos enviar um e-mail para receber o reembolso integral, sem burocracia e sem perguntas."
     }
   ];
 
@@ -395,7 +395,7 @@ export default function App() {
       <div id="top-announcement" className="w-full bg-[#6B4E35] text-[#F5F0E8] py-2.5 px-4 text-center text-[11px] md:text-xs font-semibold tracking-wider flex items-center justify-center gap-2 border-b border-[#C4A97D]/30">
         <span className="inline-flex items-center gap-1.5">
           <span className="w-2 h-2 rounded-full bg-[#C4A97D] animate-ping" />
-          🔥 OFFRE DE LANCEMENT : EXCLUSIF POUR THÉRAPEUTES, MASSOTHÉRAPEUTES ET ESTHÉTICIENNES
+          🔥 OFERTA DE LANÇAMENTO: EXCLUSIVA PARA TERAPEUTAS, MASSOTERAPEUTAS E ESTETICISTAS
         </span>
       </div>
 
@@ -408,18 +408,18 @@ export default function App() {
         <div className="lg:col-span-7 space-y-6 flex flex-col items-center text-center relative z-10 w-full">
           <div className="inline-flex items-center gap-2 bg-[#E8DFD0] border border-[#C4A97D]/50 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide text-[#A0785A] mx-auto">
             <Sparkles className="w-3.5 h-3.5 text-[#A0785A]" />
-            <span>Guide 100% Numérique • Accès à Vie</span>
+            <span>Guia 100% Digital • Acesso Vitalício</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#2C2A27] leading-[1.1] tracking-tight text-center w-full">
-            100 Protocoles <br />
-            <span className="text-[#A0785A] drop-shadow-sm">de Ventousothérapie</span>
+            100 Protocolos <br />
+            <span className="text-[#A0785A] drop-shadow-sm">de Ventosaterapia</span>
           </h1>
 
           <div className="my-5 max-w-lg mx-auto">
             <img 
               src="https://iili.io/C2Xfwrb.png" 
-              alt="100 Protocoles de Ventousothérapie" 
+              alt="100 Protocolos de Ventosaterapia" 
               className="w-full h-auto rounded-2xl shadow-lg border border-[#C4A97D]/30 object-contain select-none"
               referrerPolicy="no-referrer"
               onError={(e) => {
@@ -432,16 +432,16 @@ export default function App() {
           </div>
 
           <p className="text-base md:text-lg text-[#2C2A27]/85 leading-relaxed max-w-xl font-light text-center mx-auto">
-            Bénéficiez de protocoles d'action rapide prêts pour chaque type de trouble. Appliquez la ventousothérapie avec une précision maximale, une sécurité clinique totale et un niveau de professionnalisme élevé pour fidéliser davantage de clients.
+            Tenha protocolos de ação rápida prontos para cada tipo de queixa. Aplique a ventosaterapia com máxima precisão, total segurança clínica e um alto nível de profissionalismo para fidelizar mais clientes.
           </p>
 
           {/* Quick list specs in hero */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 max-w-xl mx-auto w-full text-left">
             {[
-              "Cartographies précises d'application",
-              "Étape par étape par type de trouble",
-              "Zones d'attention et biosécurité",
-              "Intégration de l'aromathérapie"
+              "Mapas precisos de aplicação",
+              "Passo a passo para cada tipo de queixa",
+              "Zonas de atenção e biossegurança",
+              "Integração com a aromaterapia"
             ].map((feature, i) => (
               <div key={i} className="flex items-center gap-2.5 text-sm font-medium text-[#2C2A27]/90 justify-center sm:justify-start">
                 <CheckCircle className="w-4.5 h-4.5 text-[#A0785A] shrink-0" />
@@ -457,7 +457,7 @@ export default function App() {
               className="px-8 py-4 bg-[#6B4E35] text-[#F5F0E8] rounded-xl font-semibold text-base transition-all duration-300 hover:bg-[#6B4E35]/95 hover:translate-y-[-2px] tracking-wide shadow-lg hover:shadow-xl active:translate-y-0 text-center cursor-pointer relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center justify-center gap-2.5">
-                JE VEUX MES PROTOCOLES MAINTENANT 
+                QUERO MEUS PROTOCOLOS AGORA 
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
               <span className="absolute inset-0 bg-white/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
@@ -468,7 +468,7 @@ export default function App() {
           <div className="pt-6 mt-6 border-t border-[#C4A97D]/30 select-none animate-fade-in bg-[#E8DFD0]/30 p-6 rounded-3xl border border-[#C4A97D]/20">
             <div className="mb-4 text-center sm:text-left">
               <span className="bg-[#6B4E35] text-[#F5F0E8] text-[10px] uppercase tracking-widest font-extrabold px-3.5 py-1.5 rounded-lg shadow-sm border border-[#C4A97D]/30">
-                CURRICULUM DE VOTRE MENTORE
+                CURRÍCULO DA SUA MENTORA
               </span>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
@@ -485,14 +485,14 @@ export default function App() {
               </div>
               <div className="text-center sm:text-left space-y-2 flex-1 pt-2">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 justify-center sm:justify-start">
-                  <span className="text-[10px] uppercase tracking-widest text-[#A0785A] font-bold bg-[#A0785A]/10 px-2.5 py-0.5 rounded">Créatrice de la Méthode</span>
+                  <span className="text-[10px] uppercase tracking-widest text-[#A0785A] font-bold bg-[#A0785A]/10 px-2.5 py-0.5 rounded">Criadora do Método</span>
                 </div>
                 <div>
                   <p className="text-xl font-serif font-bold text-[#2C2A27] tracking-wider">CLAIRE FONTAINE</p>
-                  <p className="text-xs text-[#A0785A] font-semibold uppercase tracking-wider">Spécialiste Clinique en Ventousothérapie</p>
+                  <p className="text-xs text-[#A0785A] font-semibold uppercase tracking-wider">Especialista Clínica em Ventosaterapia</p>
                 </div>
                 <p className="text-[13px] text-[#2C2A27]/85 leading-relaxed max-w-md font-light">
-                  Professionnelle de santé, acupunctrice et thérapeute intégrative avec plus de 12 ans d'expérience clinique. Spécialiste de la vacuothérapie (cupping) et de la réhabilitation, dédiée à guider les professionnels de thérapie et de l'esthétique avec un maximum d'autorité, de biosécurité et de protocoles pratiques de haute performance.
+                  Profissional da saúde, acupunturista e terapeuta integrativa com mais de 12 anos de experiência clínica. Especialista em vacuoterapia (cupping) e reabilitação, dedicada a orientar profissionais da terapia e da estética com máxima autoridade, biossegurança e protocolos práticos de alto desempenho.
                 </p>
               </div>
             </div>
@@ -508,7 +508,7 @@ export default function App() {
             <div className="relative p-2 bg-[#E8DFD0] rounded-3xl border border-[#C4A97D]/40 shadow-xl overflow-hidden">
               <img 
                 src="https://iili.io/C2Xfwrb.png" 
-                alt="100 Protocoles de Ventousothérapie Bundle" 
+                alt="Pacote 100 Protocolos de Ventosaterapia" 
                 className="w-full h-auto rounded-2xl object-cover transform scale-100 group-hover:scale-[1.02] transition-all duration-500"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -521,7 +521,7 @@ export default function App() {
               
               {/* Overlay elements mapping value tags */}
               <div className="absolute top-6 right-6 bg-[#6B4E35] text-[#F5F0E8] text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold shadow-md">
-                Meilleure Vente
+                Mais Vendido
               </div>
             </div>
           </div>
@@ -531,19 +531,19 @@ export default function App() {
       {/* Hero Accent Bar Ribbon */}
       <div id="hero-ribbon" className="w-full bg-[#E8DFD0] border-y border-[#C4A97D]/40 py-5 text-center px-4 font-normal text-[#2C2A27]">
         <p className="text-base md:text-lg tracking-wide max-w-3xl mx-auto">
-          Prêts à être <strong className="font-semibold text-[#A0785A]">appliqués immédiatement</strong> et à <strong className="font-semibold text-[#A0785A]">transformer vos séances de soins</strong>.
+          Prontos para serem <strong className="font-semibold text-[#A0785A]">aplicados imediatamente</strong> e <strong className="font-semibold text-[#A0785A]">transformar as suas sessões</strong>.
         </p>
       </div>
 
       {/* 3. Live Customer Social Proof / Social Comments */}
       <section id="social-comments" className="py-16 px-4 bg-[#FAFAFA] border-y border-[#C4A97D]/20">
         <div className="max-w-4xl mx-auto text-center space-y-4 mb-8">
-          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block font-sans">Communauté Active</span>
+          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block font-sans">Comunidade Ativa</span>
           <h2 className="text-2xl md:text-3xl font-serif font-semibold text-[#2C2A27]">
-            Découvrez les commentaires sur les réseaux
+            Veja os comentários nas redes
           </h2>
           <p className="text-xs sm:text-sm text-[#2C2A27]/70 max-w-lg mx-auto">
-            Retours réels de notre communauté de kinésithérapeutes, massothérapeutes et esthéticiennes à travers le monde.
+            Depoimentos da nossa comunidade de fisioterapeutas, massoterapeutas e esteticistas pelo mundo.
           </p>
         </div>
 
@@ -564,12 +564,12 @@ export default function App() {
                   <span className="font-semibold text-[15px] text-[#050505] hover:underline cursor-pointer truncate">
                     CLAIRE FONTAINE
                   </span>
-                  <BadgeCheck className="w-4 h-4 text-white fill-[#1877F2] shrink-0" title="Profil Autrice Vérifiée" />
+                  <BadgeCheck className="w-4 h-4 text-white fill-[#1877F2] shrink-0" title="Perfil de Autora Verificado" />
                 </div>
                 <div className="flex items-center gap-1 text-[12px] text-[#65676b] min-w-0">
-                  <span className="truncate">Publié par CLAIRE FONTAINE</span>
+                  <span className="truncate">Publicado por CLAIRE FONTAINE</span>
                   <span className="shrink-0">·</span>
-                  <span className="shrink-0" title="À l'instant">À l'instant</span>
+                  <span className="shrink-0" title="Agora mesmo">À l'instant</span>
                   <span className="shrink-0">·</span>
                   <span className="text-[11px] shrink-0 select-none" title="Public">🌐</span>
                 </div>
@@ -582,7 +582,7 @@ export default function App() {
           </div>
 
           <div className="px-4 pb-3 text-[15px] leading-normal text-[#050505] select-text text-left">
-            Très fière de voir l'impact réel du <strong className="font-semibold text-[#6B4E35]">Compendium de Ventousothérapie Clinique</strong> sur le raisonnement rapide et le soulagement immédiat de la douleur de vos patients. Ensemble, nous élevons le niveau de la réadaptation ! Découvrez quelques-uns des retours pratiques de notre communauté 👇❤️
+            Muito orgulhosa de ver o impacto real do <strong className="font-semibold text-[#6B4E35]">Compêndio de Ventosaterapia Clínica</strong> no raciocínio rápido e no alívio imediato da dor dos seus pacientes. Juntos, estamos elevando o nível da reabilitação! Confira alguns dos depoimentos práticos da nossa comunidade 👇❤️
           </div>
 
           {/* Dual-Split Post Media Attachments (Mimicking Chris' Desert split photos in the mockup) */}
@@ -591,12 +591,12 @@ export default function App() {
             <div className="aspect-[4/3] bg-stone-100 relative overflow-hidden group cursor-pointer">
               <img 
                 src="https://iili.io/CHsK4ZQ.jpg" 
-                alt="Claire Fontaine Prática" 
+                alt="Claire Fontaine na prática" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-2 left-2 bg-black/60 text-white text-[9px] uppercase tracking-wider font-bold px-2 py-0.5 rounded backdrop-blur-xs">
-                Méthode Officielle
+                Método Oficial
               </div>
             </div>
 
@@ -607,7 +607,7 @@ export default function App() {
             >
               <img 
                 src="https://iili.io/C2Xfwrb.png" 
-                alt="Digital Compendium" 
+                alt="Compêndio Digital" 
                 className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
@@ -618,7 +618,7 @@ export default function App() {
                 }}
               />
               <div className="absolute bottom-2 right-2 bg-[#6B4E35] text-white text-[9px] uppercase tracking-wider font-bold px-2 py-0.5 rounded shadow-sm">
-                Accès de Lancement
+                Acesso de Lançamento
               </div>
             </div>
           </div>
@@ -635,14 +635,14 @@ export default function App() {
                 <span className="w-4 h-4 rounded-full bg-[#f5c33b] flex items-center justify-center text-white text-[9px] border border-white shadow-xs select-none">😮</span>
               </div>
               <span className="hover:underline cursor-pointer font-normal truncate text-[#65676b] text-left">
-                {postLiked ? "Vous, Jean-Pierre Laurent et 182 autres personnes" : "Jean-Pierre Laurent, Nathalie Mercier et 182 autres personnes"}
+                {postLiked ? "Você, Jean-Pierre Laurent e outras 182 pessoas" : "Jean-Pierre Laurent, Nathalie Mercier e outras 182 pessoas"}
               </span>
             </div>
             
             <div className="flex items-center gap-1 hover:underline cursor-pointer shrink-0 text-[#65676b] text-xs py-2">
-              <span>{3 + facebookComments.length} commentaires</span>
+              <span>{3 + facebookComments.length} comentários</span>
               <span>·</span>
-              <span>29 partages</span>
+              <span>29 compartilhamentos</span>
             </div>
           </div>
 
@@ -653,29 +653,29 @@ export default function App() {
               className={`flex items-center justify-center gap-2 py-2 hover:bg-[#f2f3f5] rounded-lg transition-colors cursor-pointer active:scale-95 ${postLiked ? "text-[#1877F2]" : ""}`}
             >
               <ThumbsUp className={`w-[18px] h-[18px] ${postLiked ? "fill-[#1877F2] text-[#1877F2]" : "text-[#65676b]"}`} />
-              <span>{postLiked ? "Aimé" : "J'aime"}</span>
+              <span>{postLiked ? "Curtido" : "Curtir"}</span>
             </button>
             <button 
               onClick={focusCommentInput}
               className="flex items-center justify-center gap-2 py-2 hover:bg-[#f2f3f5] rounded-lg transition-colors cursor-pointer active:scale-95 text-[#65676b]"
             >
               <MessageCircle className="w-[18px] h-[18px] text-[#65676b]" />
-              <span>Commenter</span>
+              <span>Comentar</span>
             </button>
             <button 
               onClick={handleShare}
               className="flex items-center justify-center gap-2 py-2 hover:bg-[#f2f3f5] rounded-lg transition-colors cursor-pointer active:scale-95 text-[#65676b]"
             >
               <Share2 className="w-[18px] h-[18px] text-[#65676b]" />
-              <span>Partager</span>
+              <span>Compartilhar</span>
             </button>
           </div>
 
           {/* View Previews Comments Trigger Area */}
           <div className="px-4 py-2 flex items-center justify-between bg-white text-xs sm:text-[13px] text-[#65676b] font-semibold select-none">
-            <button className="hover:underline cursor-pointer text-left">Voir les commentaires précédents...</button>
+            <button className="hover:underline cursor-pointer text-left">Ver comentários anteriores...</button>
             <button className="flex items-center gap-1 hover:bg-[#f2f3f5] px-2 py-1 rounded-md text-[#65676b] cursor-pointer">
-              <span>Plus pertinents</span>
+              <span>Mais relevantes</span>
               <span className="text-[9px]">▼</span>
             </button>
           </div>
@@ -721,7 +721,7 @@ export default function App() {
                         <button 
                           onClick={() => handleLike(item.id)}
                           className="absolute -bottom-1 right-2 bg-white flex items-center gap-0.5 px-1 py-0.5 h-5 min-w-[28px] justify-center rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.15)] border border-[#e5e5e5] text-[10px] text-[#65676b] select-none cursor-pointer active:scale-95 transition-transform"
-                          title="Aimer ce commentaire"
+                          title="Curtir este comentário"
                         >
                           <span className="w-3.5 h-3.5 rounded-full bg-[#1877F2] flex items-center justify-center text-white text-[8px] shrink-0">👍</span>
                           <span className="font-semibold text-[#65676b] leading-none shrink-0">{socialLikes[item.id] ?? item.likes}</span>
@@ -735,10 +735,10 @@ export default function App() {
                         onClick={() => handleLike(item.id)}
                         className={`hover:underline cursor-pointer ${userLiked[item.id] ? "text-[#1877F2] font-semibold" : ""}`}
                       >
-                        {userLiked[item.id] ? "Aimé" : "J'aime"}
+                        {userLiked[item.id] ? "Curtido" : "Curtir"}
                       </button>
                       <span className="text-gray-400 font-normal px-0.5">·</span>
-                      <button onClick={focusCommentInput} className="hover:underline cursor-pointer">Répondre</button>
+                      <button onClick={focusCommentInput} className="hover:underline cursor-pointer">Responder</button>
                       <span className="text-gray-400 font-normal px-0.5">·</span>
                       <span className="text-[#65676b] font-normal">{item.time}</span>
                     </div>
@@ -774,10 +774,10 @@ export default function App() {
                               {item.reply.name}
                             </span>
                             
-                            <BadgeCheck className="w-3.5 h-3.5 text-white fill-[#1877F2] shrink-0" title="Profil Autrice Vérifiée" />
+                            <BadgeCheck className="w-3.5 h-3.5 text-white fill-[#1877F2] shrink-0" title="Perfil de Autora Verificado" />
                             
                             <span className="text-[11px] text-[#65676b] font-semibold select-none ml-1">
-                              · Auteur
+                              · Autora
                             </span>
                           </div>
                           
@@ -791,7 +791,7 @@ export default function App() {
                           <button 
                             onClick={() => handleLike(item.reply.id)}
                             className="absolute -bottom-1 right-2 bg-white flex items-center gap-0.5 px-1 py-0.5 h-5 min-w-[28px] justify-center rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.15)] border border-[#e5e5e5] text-[10px] text-[#65676b] select-none cursor-pointer active:scale-95 transition-transform"
-                            title="Aimer cette réponse"
+                            title="Curtir esta resposta"
                           >
                             <span className="w-3.5 h-3.5 rounded-full bg-[#1877F2] flex items-center justify-center text-white text-[8px] shrink-0">👍</span>
                             <span className="font-semibold text-[#65676b] leading-none shrink-0">{socialLikes[item.reply.id] ?? item.reply.likes}</span>
@@ -805,10 +805,10 @@ export default function App() {
                           onClick={() => handleLike(item.reply.id)}
                           className={`hover:underline cursor-pointer ${userLiked[item.reply.id] ? "text-[#1877F2] font-semibold" : ""}`}
                         >
-                          {userLiked[item.reply.id] ? "Aimé" : "J'aime"}
+                          {userLiked[item.reply.id] ? "Curtido" : "Curtir"}
                         </button>
                         <span className="text-gray-400 font-normal px-0.5">·</span>
-                        <button onClick={focusCommentInput} className="hover:underline cursor-pointer">Répondre</button>
+                        <button onClick={focusCommentInput} className="hover:underline cursor-pointer">Responder</button>
                         <span className="text-gray-400 font-normal px-0.5">·</span>
                         <span className="text-[#65676b] font-normal">{item.reply.time}</span>
                       </div>
@@ -827,7 +827,7 @@ export default function App() {
           >
             <img 
               src="https://iili.io/CHsK4ZQ.jpg" 
-              alt="Vous" 
+              alt="Você" 
               referrerPolicy="no-referrer"
               className="w-8 h-8 rounded-full border border-[#dadde1] shadow-inner object-cover select-none shrink-0"
             />
@@ -835,20 +835,20 @@ export default function App() {
               <input 
                 ref={commentInputRef}
                 type="text"
-                placeholder="Écrire un commentaire..."
+                placeholder="Escreva um comentário..."
                 value={newCommentText}
                 onChange={(e) => setNewCommentText(e.target.value)}
                 className="w-full bg-transparent border-0 p-0 pr-16 text-xs sm:text-[13px] text-[#1c1e21] focus:ring-0 placeholder-[#65676b] leading-normal"
               />
               <div className="absolute right-2.5 flex items-center gap-2 text-[#65676b]">
-                <button type="button" className="hover:text-[#1877F2] transition-colors p-0.5 cursor-pointer" title="Ajouter un émoji">
+                <button type="button" className="hover:text-[#1877F2] transition-colors p-0.5 cursor-pointer" title="Adicionar emoji">
                   <Smile className="w-[18px] h-[18px] shrink-0" />
                 </button>
                 <button 
                   type="submit" 
                   disabled={!newCommentText.trim()} 
                   className="text-[#1877F2] hover:text-[#1464cc] transition-colors p-0.5 disabled:text-[#65676b]/40 disabled:pointer-events-none cursor-pointer"
-                  title="Envoyer le commentaire"
+                  title="Enviar comentário"
                 >
                   <Send className="w-4.5 h-4.5 shrink-0" />
                 </button>
@@ -863,19 +863,19 @@ export default function App() {
       <section id="audience" className="py-16 bg-[#E8DFD0] border-y border-[#C4A97D]/35 px-4 font-sans text-left">
         <div className="max-w-4xl mx-auto text-center space-y-10">
           <div className="space-y-2">
-            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Identification Clinique</span>
+            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Identificação Clínica</span>
             <h2 className="text-3xl font-serif font-bold text-[#2C2A27]">
-              Ce guide a été fait pour vous si...
+              Este guia foi feito para você que...
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
             {[
-              "Vous hésitez sur les zones exactes lors du choix des points et finissez par perdre trop de temps pendant vos consultations.",
-              "Vous estimez que vos soins pourraient offrir des résultats thérapeutiques et un soulagement de la douleur plus constants.",
-              "Vous souhaitez cesser de dépendre de notes éparses et avoir le tout parfaitement cartographié, propre et organisé au même endroit.",
-              "Vous cherchez à vous démarquer sur le marché en tant que thérapeute hautement qualifié, technique et différencié de la concurrence.",
-              "Vous souhaitez offrir une expérience de cupping irréprochable qui incite vos patients à revenir et à vous recommander."
+              "Fica em dúvida sobre as zonas exatas na hora de escolher os pontos e acaba perdendo tempo demais durante os atendimentos.",
+              "Sente que os seus atendimentos poderiam entregar resultados terapêuticos e alívio da dor mais consistentes.",
+              "Quer parar de depender de anotações soltas e ter tudo perfeitamente mapeado, limpo e organizado em um só lugar.",
+              "Busca se destacar no mercado como terapeuta altamente qualificado, técnico e diferenciado da concorrência.",
+              "Quer oferecer uma experiência de ventosaterapia impecável, que faça seus pacientes voltarem e indicarem você."
             ].map((text, i) => (
               <div 
                 key={i} 
@@ -892,7 +892,7 @@ export default function App() {
           </div>
 
           <p className="text-base text-[#2C2A27]/80 font-normal italic max-w-2xl mx-auto pt-4 leading-relaxed font-sans block text-center">
-            "Si vous vous êtes reconnu dans au moins une de ces situations, ce compendium de protocoles structurés transformera votre méthode de soins par ventouses."
+            "Se você se identificou com pelo menos uma dessas situações, este compêndio de protocolos estruturados vai transformar a sua forma de atender com ventosas."
           </p>
         </div>
       </section>
@@ -900,12 +900,12 @@ export default function App() {
       {/* 5. Direct Contrast Comparison */}
       <section id="comparison" className="py-20 px-4 max-w-5xl mx-auto font-sans text-left">
         <div className="text-center space-y-3 mb-12">
-          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Professionnalisme vs Amateurisme</span>
+          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Profissionalismo x Amadorismo</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-            La différence entre improviser et maîtriser
+            A diferença entre improvisar e dominar
           </h2>
           <p className="text-sm md:text-base text-[#2C2A27]/70 max-w-lg mx-auto text-center">
-            Comparez le flux de travail de celui qui improvise face à celui qui utilise les guides d'action rapide.
+            Compare a rotina de quem improvisa com a de quem usa os guias de ação rápida.
           </p>
         </div>
 
@@ -918,26 +918,26 @@ export default function App() {
                   <XCircle className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2C2A27] font-serif">
-                  Sans le protocole, vous continuez à...
+                  Sem o protocolo, você continua...
                 </h3>
               </div>
               
               <ul className="space-y-4 pt-6 text-sm text-[#2C2A27]/90 font-light">
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-600 mt-1.5 shrink-0" />
-                  <span><strong>Des séances longues et confuses :</strong> perdre du temps à chercher les meilleures zones pendant la séance avec le patient installé sur la table.</span>
+                  <span><strong>Com sessões longas e confusas:</strong> perdendo tempo procurando as melhores zonas durante a sessão, com o paciente já deitado na maca.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-600 mt-1.5 shrink-0" />
-                  <span><strong>Des patients qui ne reviennent pas :</strong> soins génériques qui n'apportent pas de bénéfices immédiats, diminuant la fidélisation.</span>
+                  <span><strong>Com pacientes que não voltam:</strong> atendimentos genéricos que não trazem benefícios imediatos e reduzem a fidelização.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-600 mt-1.5 shrink-0" />
-                  <span><strong>La peur de faire une erreur :</strong> incertitude au moment de doser la pression, de gérer les traces de ventouse ou de soigner des personnes sensibles.</span>
+                  <span><strong>Com medo de errar:</strong> inseguro na hora de dosar a pressão, lidar com as marcas das ventosas ou atender pessoas sensíveis.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-600 mt-1.5 shrink-0" />
-                  <span><strong>Une stagnation technique :</strong> reproduire mécaniquement le même positionnement homogène de ventouses pour toutes les pathologies.</span>
+                  <span><strong>Estagnado tecnicamente:</strong> repetindo no automático o mesmo posicionamento de ventosas para todas as queixas.</span>
                 </li>
               </ul>
             </div>
@@ -954,26 +954,26 @@ export default function App() {
                   <CheckCircle className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-[#2C2A27] font-serif">
-                  Avec le protocole, vous commencez à...
+                  Com o protocolo, você passa a ter...
                 </h3>
               </div>
 
               <ul className="space-y-4 pt-6 text-sm text-[#2C2A27]/90 font-light">
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span><strong>Des séances hautement structurées :</strong> chaque trouble a son protocole exact, illustré et prêt. Il suffit de suivre le guide.</span>
+                  <span><strong>Sessões altamente estruturadas:</strong> cada queixa tem o seu protocolo exato, ilustrado e pronto. É só seguir o guia.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span><strong>Des clients enchantés :</strong> soulagement rapide des tensions dorsales et amélioration visible, incitant à des parrainages automatiques.</span>
+                  <span><strong>Clientes encantados:</strong> alívio rápido das tensões nas costas e melhora visível, gerando indicações naturalmente.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span><strong>Une sécurité clinique absolue :</strong> vous maîtrisez parfaitement les zones de contre-indications et les temps d'application.</span>
+                  <span><strong>Segurança clínica absoluta:</strong> você domina as zonas de contraindicação e os tempos de aplicação.</span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-1.5 shrink-0" />
-                  <span><strong>Une autorité professionnelle reconnue :</strong> valorisation de votre savoir-faire pour facturer sereinement le juste prix de vos prestations.</span>
+                  <span><strong>Autoridade profissional reconhecida:</strong> valorização do seu trabalho para cobrar com tranquilidade o preço justo pelos seus atendimentos.</span>
                 </li>
               </ul>
             </div>
@@ -986,7 +986,7 @@ export default function App() {
             <div className="absolute inset-0 bg-[#A0785A]/10 rounded-2xl sm:rounded-3xl filter blur-xl group-hover:bg-[#A0785A]/15 transition-colors" />
             <img 
               src="https://iili.io/CHsb8rv.png" 
-              alt="Protocoles Illustrés de Ventousothérapie" 
+              alt="Protocolos Ilustrados de Ventosaterapia" 
               className="relative rounded-2xl sm:rounded-3xl border border-[#C4A97D]/50 shadow-xl w-full object-cover bg-[#F5F0E8]"
               referrerPolicy="no-referrer"
               onError={(e) => {
@@ -1005,10 +1005,10 @@ export default function App() {
             onClick={() => window.open("https://pay.hotmart.com/N106028023S?checkoutMode=10", "_blank")}
             className="px-10 py-4.5 bg-[#6B4E35] text-[#F5F0E8] rounded-xl font-bold text-base transition-all duration-300 hover:bg-[#6B4E35]/95 hover:translate-y-[-2px] tracking-widest shadow-lg hover:shadow-xl cursor-pointer"
           >
-            JE VEUX SOIGNER AVEC EXCELLENCE
+            QUERO ATENDER COM EXCELÊNCIA
           </button>
           <div className="text-[11px] text-[#2C2A27]/60 flex items-center justify-center gap-1 font-sans">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#A0785A]" /> Paiement 100% Sécurisé • Accès immédiat après validation
+            <ShieldCheck className="w-3.5 h-3.5 text-[#A0785A]" /> Pagamento 100% Seguro • Acesso imediato após a aprovação
           </div>
         </div>
       </section>
@@ -1018,12 +1018,12 @@ export default function App() {
         <div className="max-w-5xl mx-auto space-y-12">
           
           <div className="text-center space-y-2">
-            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Programme du Compendium</span>
+            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Conteúdo do Compêndio</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-              4 catégories de protocoles pour couvrir chaque besoin
+              4 categorias de protocolos para cobrir cada necessidade
             </h2>
             <p className="text-sm md:text-base text-[#2C2A27]/75 max-w-xl mx-auto">
-              Chaque catégorie a été chirurgicalement structurée avec des protocoles d'application illustrés et expliqués en détail.
+              Cada categoria foi estruturada com precisão cirúrgica, com protocolos de aplicação ilustrados e explicados em detalhes.
             </p>
           </div>
 
@@ -1096,13 +1096,13 @@ export default function App() {
                               <div className="pt-2">
                                 <div className="p-4 bg-[#E8DFD0]/40 rounded-2xl border border-[#C4A97D]/25">
                                   <h4 className="text-xs font-bold uppercase tracking-wider text-[#A0785A] mb-1">
-                                    Comment fonctionne cette régulation :
+                                    Como essa regulação funciona:
                                   </h4>
                                   <p className="text-xs text-[#2C2A27]/90 leading-relaxed font-light">
-                                    {idx === 0 && "La cartographie vous guide à travers les dermatomes et les zones réflexes les plus réceptives à la stimulation par le vide, optimisant la circulation fasciale et assurant une décompression musculaire profonde."}
-                                    {idx === 1 && "Agit sur le système nerveux autonome (SNA), réduisant le stress et la fatigue en stimulant les récepteurs cutanés pour induire une profonde détente musculaire."}
-                                    {idx === 2 && "Active le retour lymphatique et améliore la circulation locale par des techniques de glissement contrôlé, contribuant à réduire les œdèmes et améliorer la tonicité cutanée."}
-                                    {idx === 3 && "Régule la motilité viscérale et aide à apaiser le système gastro-intestinal et respiratoire par des stimulations mécaniques douces sur les dermatomes correspondants."}
+                                    {idx === 0 && "O mapeamento guia você pelos dermátomos e pelas zonas reflexas mais receptivas à estimulação por sucção, otimizando a circulação fascial e garantindo uma descompressão muscular profunda."}
+                                    {idx === 1 && "Atua no sistema nervoso autônomo (SNA), reduzindo o estresse e o cansaço ao estimular os receptores da pele para induzir um relaxamento muscular profundo."}
+                                    {idx === 2 && "Ativa o retorno linfático e melhora a circulação local com técnicas de deslizamento controlado, ajudando a reduzir edemas e melhorar a firmeza da pele."}
+                                    {idx === 3 && "Regula a motilidade visceral e ajuda a acalmar os sistemas gastrointestinal e respiratório com estímulos mecânicos suaves nos dermátomos correspondentes."}
                                   </p>
                                 </div>
                               </div>
@@ -1111,7 +1111,7 @@ export default function App() {
                             {/* Right/List Column (Protocols) */}
                             <div className="lg:col-span-7 space-y-3.5 border-t lg:border-t-0 lg:border-l border-[#C4A97D]/35 pt-6 lg:pt-0 lg:pl-8">
                               <h4 className="text-xs font-bold uppercase tracking-wider text-[#2C2A27]/60 mb-3 flex items-center gap-1.5 pl-1">
-                                <BookmarkCheck className="w-4 h-4 text-[#A0785A]" /> Quelques protocoles inclus dans cette catégorie :
+                                <BookmarkCheck className="w-4 h-4 text-[#A0785A]" /> Alguns protocolos incluídos nesta categoria:
                               </h4>
                               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs md:text-sm text-[#2C2A27]/90 font-light">
                                 {cat.protocols.map((protocol, i) => (
@@ -1139,12 +1139,12 @@ export default function App() {
       {/* 7. Bonus Section (3 free bonuses) */}
       <section id="bonuses" className="py-20 px-4 max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-2">
-          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Offre Spéciale</span>
+          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Oferta Especial</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-            Et ce n'est pas tout : 3 bonus de grande valeur offerts
+            E não para por aí: 3 bônus de grande valor de presente
           </h2>
           <p className="text-sm md:text-base text-[#2C2A27]/75 max-w-lg mx-auto">
-            Inclus mécaniquement dans votre accès immédiat de manière 100% gratuite, sans aucun coût additionnel futur.
+            Incluídos automaticamente no seu acesso imediato, 100% gratuitos, sem nenhum custo adicional no futuro.
           </p>
         </div>
 
@@ -1155,30 +1155,30 @@ export default function App() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-[#F5F0E8] border border-[#C4A97D]/30 relative flex items-center justify-center p-2 group">
                 <img 
                   src="/src/assets/images/bonus_one_aromatique_1779572479501.png" 
-                  alt="L'Alliance Aromatique" 
+                  alt="A Aliança Aromática" 
                   className="max-h-full max-w-full object-contain transform group-hover:scale-105 transition-transform"
                   referrerPolicy="no-referrer"
                 />
                 <span className="absolute top-3 left-3 bg-[#6B4E35] text-[#F5F0E8] text-[9px] font-bold px-2 py-1 rounded-full border border-[#C4A97D]/40 uppercase tracking-widest">
-                  Bonus 1
+                  Bônus 1
                 </span>
               </div>
               
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <h3 className="font-serif font-bold text-lg text-[#2C2A27]">
-                    L'Alliance Aromatique
+                    A Aliança Aromática
                   </h3>
                 </div>
                 <p className="text-xs text-[#2C2A27]/80 leading-relaxed font-light">
-                  Guide de synergie entre ventouses et huiles essentielles — tableau des combinaisons, dosages requis et 3 protocoles inédits.
+                  Guia de sinergia entre ventosas e óleos essenciais — tabela de combinações, dosagens recomendadas e 3 protocolos inéditos.
                 </p>
               </div>
             </div>
 
             <div className="pt-6 border-t border-[#C4A97D]/30 mt-4 flex items-center justify-between">
-              <span className="text-xs text-[#2C2A27]/60 line-through">Valeur réelle : 67€</span>
-              <span className="text-sm font-bold text-[#A0785A]">OFFERT AUJOURD'HUI</span>
+              <span className="text-xs text-[#2C2A27]/60 line-through">Valor real: 67€</span>
+              <span className="text-sm font-bold text-[#A0785A]">GRÁTIS HOJE</span>
             </div>
           </div>
 
@@ -1188,7 +1188,7 @@ export default function App() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-[#F5F0E8] border border-[#C4A97D]/30 relative flex items-center justify-center p-2 group">
                 <img 
                   src="https://iili.io/C2Xfwrb.png" 
-                  alt="Le Cabinet Prêt-à-L'Emploi" 
+                  alt="O Consultório Pronto para Usar" 
                   className="max-h-full max-w-full object-contain transform group-hover:scale-105 transition-transform"
                   referrerPolicy="no-referrer"
                   onError={(e) => {
@@ -1199,25 +1199,25 @@ export default function App() {
                   }}
                 />
                 <span className="absolute top-3 left-3 bg-[#6B4E35] text-[#F5F0E8] text-[9px] font-bold px-2 py-1 rounded-full border border-[#C4A97D]/40 uppercase tracking-widest">
-                  Bonus 2
+                  Bônus 2
                 </span>
               </div>
               
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <h3 className="font-serif font-bold text-lg text-[#2C2A27]">
-                    Le Cabinet Prêt-à-L'Emploi
+                    O Consultório Pronto para Usar
                   </h3>
                 </div>
                 <p className="text-xs text-[#2C2A27]/80 leading-relaxed font-light">
-                  Fiche d'anamnèse, formulaire de consentement éclairé et grille tarifaire de consultation — documents en français prêts à imprimer.
+                  Ficha de anamnese, termo de consentimento livre e esclarecido e tabela de preços de atendimento — documentos em francês prontos para imprimir.
                 </p>
               </div>
             </div>
 
             <div className="pt-6 border-t border-[#C4A97D]/30 mt-4 flex items-center justify-between">
-              <span className="text-xs text-[#2C2A27]/60 line-through">Valeur réelle : 47€</span>
-              <span className="text-sm font-bold text-[#A0785A]">OFFERT AUJOURD'HUI</span>
+              <span className="text-xs text-[#2C2A27]/60 line-through">Valor real: 47€</span>
+              <span className="text-sm font-bold text-[#A0785A]">GRÁTIS HOJE</span>
             </div>
           </div>
 
@@ -1227,30 +1227,30 @@ export default function App() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-[#F5F0E8] border border-[#C4A97D]/30 relative flex items-center justify-center p-2 group">
                 <img 
                   src="/src/assets/images/bonus_three_seasons_1779572499868.png" 
-                  alt="Le Rythme des Saisons" 
+                  alt="O Ritmo das Estações" 
                   className="max-h-full max-w-full object-contain transform group-hover:scale-105 transition-transform"
                   referrerPolicy="no-referrer"
                 />
                 <span className="absolute top-3 left-3 bg-[#6B4E35] text-[#F5F0E8] text-[9px] font-bold px-2 py-1 rounded-full border border-[#C4A97D]/40 uppercase tracking-widest">
-                  Bonus 3
+                  Bônus 3
                 </span>
               </div>
               
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <h3 className="font-serif font-bold text-lg text-[#2C2A27]">
-                    Le Rythme des Saisons
+                    O Ritmo das Estações
                   </h3>
                 </div>
                 <p className="text-xs text-[#2C2A27]/80 leading-relaxed font-light">
-                  4 séquences de soins adaptées au calendrier européen — printemps, été, automne, hiver.
+                  4 sequências de atendimento adaptadas ao calendário europeu — primavera, verão, outono e inverno.
                 </p>
               </div>
             </div>
 
             <div className="pt-6 border-t border-[#C4A97D]/30 mt-4 flex items-center justify-between">
-              <span className="text-xs text-[#2C2A27]/60 line-through">Valeur réelle : 57€</span>
-              <span className="text-sm font-bold text-[#A0785A]">OFFERT AUJOURD'HUI</span>
+              <span className="text-xs text-[#2C2A27]/60 line-through">Valor real: 57€</span>
+              <span className="text-sm font-bold text-[#A0785A]">GRÁTIS HOJE</span>
             </div>
           </div>
         </div>
@@ -1263,22 +1263,22 @@ export default function App() {
           {/* Expert biography text column */}
           <div className="space-y-6 flex flex-col items-center">
             <div className="space-y-2">
-              <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Créatrice de la Méthode</span>
+              <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold block">Criadora do Método</span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-                Votre guide signé par <br className="hidden sm:inline" />
+                Seu guia assinado por <br className="hidden sm:inline" />
                 <span className="text-[#A0785A] tracking-wider font-extrabold">CLAIRE FONTAINE</span>
               </h2>
             </div>
 
             <div className="space-y-4 text-sm md:text-base text-[#2C2A27]/90 leading-relaxed font-light">
               <p>
-                En tant que professionnelle de santé diplômée, spécialisée dans les soins de réadaptation clinique et le soulagement de la douleur, j'ai consacré plus de 12 ans à la pratique conventionnelle avant de comprendre ses limites face à une approche globale de la santé de l'individu.
+                Como profissional da saúde formada, especializada em reabilitação clínica e alívio da dor, dediquei mais de 12 anos à prática convencional até entender os seus limites diante de uma visão integral da saúde da pessoa.
               </p>
               <p>
-                Passionnée par les approches intégratives, je me suis formée à l'Acupuncture, la Réflexologie et le Drainage Lymphatique auprès de maîtres renommés. C'est au sein de mon propre cabinet que j'ai pu observer l'extraordinaire efficacité thérapeutique des ventouses lorsqu'elles sont posées selon une cartographie anatomique rigoureuse.
+                Apaixonada pelas abordagens integrativas, me formei em Acupuntura, Reflexologia e Drenagem Linfática com mestres renomados. Foi no meu próprio consultório que pude observar a extraordinária eficácia terapêutica das ventosas quando aplicadas seguindo um mapeamento anatômico rigoroso.
               </p>
               <p>
-                Aujourd'hui, ma mission essentielle est d'aider les masseurs, esthéticiennes et thérapeutes holistiques à <strong className="font-semibold">professionnaliser et valoriser leur pratique des ventouses (cupping)</strong> pour en faire un levier d'autorité incontournable.
+                Hoje, a minha missão é ajudar massoterapeutas, esteticistas e terapeutas holísticos a <strong className="font-semibold">profissionalizar e valorizar a sua prática com ventosas (cupping)</strong>, transformando-a em uma fonte de autoridade indiscutível.
               </p>
             </div>
 
@@ -1286,7 +1286,7 @@ export default function App() {
             <div className="inline-flex gap-3 items-center bg-[#F5F0E8] p-4 rounded-xl border border-[#C4A97D]/45 mx-auto">
               <Bookmark className="w-5 h-5 text-[#A0785A] shrink-0" />
               <p className="text-xs text-[#2C2A27] font-semibold tracking-wide">
-                Cabinet de Thérapies Holistiques et Soins Intégratifs
+                Consultório de Terapias Holísticas e Cuidados Integrativos
               </p>
             </div>
           </div>
@@ -1297,12 +1297,12 @@ export default function App() {
       {/* 9. Second Feedback Grid ("Quem já usa, não volta atrás") */}
       <section id="proof" className="py-20 px-4 max-w-5xl mx-auto space-y-12">
         <div className="text-center space-y-2">
-          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Témoignages Réels</span>
+          <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Depoimentos</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-            Ceux qui l'utilisent n'en reviennent pas
+            Quem usa não volta atrás
           </h2>
           <p className="text-sm md:text-base text-[#2C2A27]/75 max-w-lg mx-auto">
-            Découvrez le retour d'expérience de praticiens et professionnels ayant adopté la méthode au quotidien.
+            Veja a experiência de terapeutas e profissionais que adotaram o método no dia a dia.
           </p>
         </div>
 
@@ -1311,25 +1311,25 @@ export default function App() {
             {
               id: "veronique",
               name: "Véronique Martin",
-              time: "il y a 7 jours",
-              quote: "Avant, je passais 40 minutes à préparer chaque séance. Maintenant, en 5 minutes, je sais précisément où placer les ventouses. Mes clients ont constaté une différence immédiate ! 🙌",
-              role: "Massothérapeute",
+              time: "há 7 dias",
+              quote: "Antes eu levava 40 minutos para preparar cada sessão. Agora, em 5 minutos, sei exatamente onde posicionar as ventosas. Meus clientes notaram a diferença na hora! 🙌",
+              role: "Massoterapeuta",
               avatar: "https://iili.io/C2WDiOJ.jpg"
             },
             {
               id: "maxime",
               name: "Maxime Lambert",
-              time: "il y a 5 jours",
-              quote: "Support extrêmement bien illustré et pratique. Je l'utilise sur mon téléphone pendant les séances et les bonus sont parfaits pour organiser le cabinet. Ça vaut chaque centime investi. 💯",
-              role: "Kinésithérapeute Clinique",
+              time: "há 5 dias",
+              quote: "Material extremamente bem ilustrado e prático. Uso no celular durante as sessões e os bônus são perfeitos para organizar o consultório. Vale cada centavo investido. 💯",
+              role: "Fisioterapeuta Clínico",
               avatar: "https://iili.io/C2WDaAG.jpg"
             },
             {
               id: "camille",
               name: "Camille Fournier",
-              time: "il y a 8 jours",
-              quote: "La séquence logique des protocoles m'a donné un fil conducteur que je n'avais pas auparavant. Mes soins ont atteint un tout autre niveau technique et les recommandations ont explosé ! ❤️",
-              role: "Esthéticienne et Cosmétologue",
+              time: "há 8 dias",
+              quote: "A sequência lógica dos protocolos me deu um fio condutor que eu não tinha antes. Meus atendimentos chegaram a outro nível técnico e as indicações explodiram! ❤️",
+              role: "Esteticista e Cosmetóloga",
               avatar: "https://iili.io/C2Wm8a1.jpg"
             }
           ].map((card) => (
@@ -1363,9 +1363,9 @@ export default function App() {
                   className={`flex items-center gap-1 cursor-pointer font-semibold ${userLiked[card.id] ? "text-[#A0785A]" : "text-[#2C2A27]/60 hover:text-[#A0785A]"}`}
                 >
                   <Heart className={`w-3.5 h-3.5 ${userLiked[card.id] ? "fill-[#A0785A]" : ""}`} />
-                  <span>J'aime ({socialLikes[card.id]})</span>
+                  <span>Curtir ({socialLikes[card.id]})</span>
                 </button>
-                <span className="text-[10px] text-[#2C2A27]/40 font-light">Praticien Vérifié</span>
+                <span className="text-[10px] text-[#2C2A27]/40 font-light">Profissional Verificado</span>
               </div>
             </div>
           ))}
@@ -1380,12 +1380,12 @@ export default function App() {
       >
         <div className="max-w-xl mx-auto space-y-8 text-center">
           <div className="space-y-2">
-            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Inscription Immédiate</span>
+            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Inscrição Imediata</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2C2A27]">
-              Garantissez votre accès complet
+              Garanta o seu acesso completo
             </h2>
             <p className="text-sm text-[#2C2A27]/75">
-              Recevez le compendium de 100 protocoles officiels avec tous les bonus de lancement inclus.
+              Receba o compêndio com os 100 protocolos oficiais e todos os bônus de lançamento incluídos.
             </p>
           </div>
 
@@ -1394,7 +1394,7 @@ export default function App() {
             {/* Dark Top bar on checkout card */}
             <div className="bg-[#6B4E35] text-[#F5F0E8] py-4 px-6 text-center border-b border-[#C4A97D]/30">
               <span className="text-xs font-bold uppercase tracking-widest text-[#C4A97D]">
-                PLAN SPÉCIAL • OFFRE LIMITÉE
+                PLANO ESPECIAL • OFERTA LIMITADA
               </span>
             </div>
 
@@ -1404,53 +1404,53 @@ export default function App() {
                 <div className="flex items-center justify-between text-sm">
                   <span className="flex items-center gap-2.5 font-medium text-[#2C2A27]">
                     <CheckCircle className="w-4.5 h-4.5 text-[#A0785A]" />
-                    Compendium de Ventousothérapie Clinique
+                    Compêndio de Ventosaterapia Clínica
                   </span>
                   <span className="text-[#2C2A27]/60 font-mono text-xs">69,00 €</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="flex items-center gap-2.5 font-medium text-[#2C2A27]">
                     <CheckCircle className="w-4.5 h-4.5 text-[#A0785A]" />
-                    Bonus 01 : L'Alliance Aromatique
+                    Bônus 01: A Aliança Aromática
                   </span>
                   <span className="text-[#2C2A27]/60 font-mono text-xs">47,00 €</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="flex items-center gap-2.5 font-medium text-[#2C2A27]">
                     <CheckCircle className="w-4.5 h-4.5 text-[#A0785A]" />
-                    Bonus 02 : Le Cabinet Prêt-à-L'Emploi
+                    Bônus 02: O Consultório Pronto para Usar
                   </span>
                   <span className="text-[#2C2A27]/60 font-mono text-xs">27,00 €</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="flex items-center gap-2.5 font-medium text-[#2C2A27]">
                     <CheckCircle className="w-4.5 h-4.5 text-[#A0785A]" />
-                    Bonus 03 : Le Rythme des Saisons
+                    Bônus 03: O Ritmo das Estações
                   </span>
                   <span className="text-[#2C2A27]/60 font-mono text-xs">17,00 €</span>
                 </div>
                 <div className="flex items-center justify-between text-sm border-t border-[#C4A97D]/20 pt-3">
                   <span className="flex items-center gap-2.5 font-semibold text-[#A0785A]">
                     <CheckCircle className="w-4.5 h-4.5 text-[#A0785A]" />
-                    Support VIP & Accès À Vie
+                    Suporte VIP e Acesso Vitalício
                   </span>
-                  <span className="text-[#A0785A] font-semibold text-xs uppercase bg-[#A0785A]/10 px-2 py-0.5 rounded">Offert</span>
+                  <span className="text-[#A0785A] font-semibold text-xs uppercase bg-[#A0785A]/10 px-2 py-0.5 rounded">Grátis</span>
                 </div>
               </div>
 
               {/* Price comparison labels */}
               <div className="border-t border-[#C4A97D]/20 pt-6 text-center space-y-2">
-                <span className="text-xs text-[#2C2A27]/50 block">Au lieu de 160,00 € pour seulement</span>
+                <span className="text-xs text-[#2C2A27]/50 block">De 160,00 € por apenas</span>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className="text-[#A0785A] font-serif text-2xl font-semibold">€</span>
                   <span className="text-[#2C2A27] font-serif text-5xl font-bold tracking-tight">27,00</span>
                 </div>
                 <span className="text-xs text-[#2C2A27]/70 block font-light">
-                  ou jusqu'à <strong>8 mensualités de 3,37 €</strong>
+                  ou em até <strong>8x de 3,37 €</strong>
                 </span>
                 
                 <div className="inline-block bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-emerald-200 mt-2">
-                  Économie Réelle de 133,00 €
+                  Economia Real de 133,00 €
                 </div>
               </div>
 
@@ -1460,10 +1460,10 @@ export default function App() {
                   onClick={() => window.open("https://pay.hotmart.com/N106028023S?checkoutMode=10", "_blank")}
                   className="w-full py-4.5 bg-[#6B4E35] text-[#F5F0E8] rounded-2xl font-bold text-center text-lg transition-transform hover:scale-[1.01] active:scale-100 cursor-pointer shadow-lg hover:bg-[#6B4E35]/95 tracking-wide uppercase"
                 >
-                  OBTENIR MES PROTOCOLES
+                  QUERO MEUS PROTOCOLOS
                 </button>
                 <div className="text-[10px] text-center text-[#2C2A27]/60 flex items-center justify-center gap-1.5">
-                  <Lock className="w-3 h-3 text-[#A0785A]" /> Paiement audité avec sécurité SSL • Accès immédiat
+                  <Lock className="w-3 h-3 text-[#A0785A]" /> Pagamento protegido com criptografia SSL • Acesso imediato
                 </div>
               </div>
 
@@ -1488,17 +1488,17 @@ export default function App() {
             {/* Visual badge mimicking 7 days icon */}
             <div className="w-24 h-24 rounded-full bg-[#6B4E35] border-4 border-[#C4A97D] flex flex-col items-center justify-center text-[#F5F0E8] shadow-md">
               <span className="font-serif text-3xl font-bold font-serif leading-none">7</span>
-              <span className="text-[9px] uppercase tracking-widest font-bold mt-0.5">Jours de</span>
-              <span className="text-[8px] uppercase tracking-widest leading-none">Garantie</span>
+              <span className="text-[9px] uppercase tracking-widest font-bold mt-0.5">Dias de</span>
+              <span className="text-[8px] uppercase tracking-widest leading-none">Garantia</span>
             </div>
           </div>
 
           <div className="md:col-span-9 space-y-4 text-center md:text-left">
             <h3 className="text-xl md:text-2xl font-serif font-bold text-[#2C2A27]">
-              Garantie Inconditionnelle de 7 Jours
+              Garantia Incondicional de 7 Dias
             </h3>
             <p className="text-xs md:text-sm text-[#2C2A27]/95 leading-relaxed font-light">
-              Faites votre achat en toute sécurité ! Vous disposez de 7 jours complets pour explorer le matériel, consulter nos 100 fiches cliniques et tester les 3 bonus offerts. Si pour une raison quelconque vous estimez que cet investissement n'élève pas le niveau technique de vos séances, demandez simplement un remboursement par e-mail : nous vous restituerons 100% du montant versé, sans poser de questions.
+              Compre com total segurança! Você tem 7 dias completos para explorar o material, consultar as 100 fichas clínicas e testar os 3 bônus de presente. Se, por qualquer motivo, sentir que esse investimento não elevou o nível técnico das suas sessões, é só pedir o reembolso por e-mail: devolvemos 100% do valor pago, sem perguntas.
             </p>
           </div>
         </div>
@@ -1508,12 +1508,12 @@ export default function App() {
       <section id="faq" className="py-20 bg-[#E8DFD0] border-y border-[#C4A97D]/35 px-4">
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="text-center space-y-2">
-            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Support et Questions</span>
+            <span className="text-xs uppercase tracking-widest text-[#A0785A] font-bold">Suporte e Dúvidas</span>
             <h2 className="text-3xl font-serif font-bold text-[#2C2A27]">
-              Des questions ? Nous y répondons.
+              Ficou com dúvidas? A gente responde.
             </h2>
             <p className="text-sm text-[#2C2A27]/70">
-              Explorez les questions fréquentes pour éclaircir les doutes et aspects pratiques du guide.
+              Confira as perguntas frequentes para esclarecer as dúvidas e os aspectos práticos do guia.
             </p>
           </div>
 
@@ -1557,10 +1557,10 @@ export default function App() {
 
         <div className="max-w-2xl mx-auto space-y-6 relative z-10">
           <h2 className="text-2xl md:text-4xl font-serif font-bold leading-tight">
-            Dans 5 minutes, vous pourriez avoir le compendium complet des 100 protocoles entre vos mains.
+            Daqui a 5 minutos, você pode estar com o compêndio completo dos 100 protocolos nas mãos.
           </h2>
           <p className="text-sm md:text-base text-[#F5F0E8]/85 max-w-lg mx-auto leading-relaxed font-light">
-            Ou vous pouvez fermer cette page et continuer d'improviser lors de votre prochaine consultation. Le choix vous appartient entièrement. Mais rappelez-vous : <strong className="text-[#C4A97D]">ce tarif de lancement est d'une durée limitée</strong>.
+            Ou pode fechar esta página e continuar improvisando no seu próximo atendimento. A escolha é totalmente sua. Mas lembre-se: <strong className="text-[#C4A97D]">este preço de lançamento é por tempo limitado</strong>.
           </p>
 
           <div className="pt-4 space-y-3">
@@ -1568,10 +1568,10 @@ export default function App() {
               onClick={() => window.open("https://pay.hotmart.com/N106028023S?checkoutMode=10", "_blank")}
               className="px-10 py-5 bg-[#F5F0E8] text-[#6B4E35] rounded-xl font-bold tracking-widest text-base shadow-xl transition-all hover:scale-[1.01] hover:shadow-2xl hover:bg-white cursor-pointer uppercase"
             >
-              OBTENIR MES PROTOCOLES
+              QUERO MEUS PROTOCOLOS
             </button>
             <p className="text-[10px] text-[#F5F0E8]/60 uppercase tracking-widest font-mono">
-              [ Achat 100% Sécurisé • 27,00 € en Paiement Unique ]
+              [ Compra 100% Segura • 27,00 € em Pagamento Único ]
             </p>
           </div>
         </div>
@@ -1580,17 +1580,17 @@ export default function App() {
       {/* 14. Standard Minimalist Legal Footer */}
       <footer id="footer" className="py-10 bg-[#2C2A27] text-[#F5F0E8]/60 border-t border-black/25 px-4 text-center space-y-3 text-xs md:text-sm font-light">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2026 • 100 Protocoles de Ventousothérapie. Tous droits réservés.</p>
+          <p>© 2026 • 100 Protocolos de Ventosaterapia. Todos os direitos reservados.</p>
           <div className="flex items-center gap-4 text-xs font-medium text-[#C4A97D]">
-            <span className="hover:underline cursor-pointer">Sécurité</span>
+            <span className="hover:underline cursor-pointer">Segurança</span>
             <span>•</span>
-            <span className="hover:underline cursor-pointer">Confidentialité</span>
+            <span className="hover:underline cursor-pointer">Privacidade</span>
             <span>•</span>
-            <span className="hover:underline cursor-pointer">Conditions d'Utilisation</span>
+            <span className="hover:underline cursor-pointer">Termos de Uso</span>
           </div>
         </div>
         <p className="text-[10px] text-[#F5F0E8]/30 max-w-2xl mx-auto leading-relaxed">
-          Mentions Légales : Les protocoles décrits dans ce compendium sont fournis exclusivement à des fins éducatives et d'accompagnement intégratif. Le diagnostic de pathologies ou d'affections physiques relève de la compétence exclusive et souveraine des professionnels de santé.
+          Aviso Legal: os protocolos descritos neste compêndio têm finalidade exclusivamente educativa e de apoio integrativo. O diagnóstico de doenças ou condições físicas é de competência exclusiva dos profissionais de saúde.
         </p>
       </footer>
 
@@ -1624,7 +1624,7 @@ export default function App() {
                 {currentNotification.action}
               </p>
               <p className="text-[10px] text-[#2C2A27]/50 font-mono">
-                {currentNotification.timeAgo} • achat vérifié ✅
+                {currentNotification.timeAgo} • compra verificada ✅
               </p>
             </div>
 
